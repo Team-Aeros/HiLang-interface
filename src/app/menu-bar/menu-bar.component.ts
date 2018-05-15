@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuBarComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+  	
+  }
 
     ngOnInit() {
         this.createElement();
@@ -51,8 +53,7 @@ export class MenuBarComponent implements OnInit {
             li_item.appendChild(icon);
             li_item.appendChild(a_item);
             ul_item.appendChild(li_item);
-            //btn.onclick( console.log("test"));
-            //btn.innerText = item.label;
+
             document.getElementById('menuBar').appendChild(ul_item);
         }
     }
